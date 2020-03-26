@@ -19,7 +19,13 @@ public class SleepyHead {
          * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
          */
     
-
+        
+       int yn =JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+        if( yn == 0) {
+        	JOptionPane.showMessageDialog(null, "You should get up. Don't go outside because of COVID-19.");
+        }else {
+        	JOptionPane.showMessageDialog(null, "Sleep in.");
+        }
 
         /*
          * Print “sleep in�? if it is a vacation or a weekend. If it’s a weekday,
